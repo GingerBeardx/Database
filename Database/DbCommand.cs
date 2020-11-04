@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Database
 {
-    class DbCommand
+    public class DbCommand
     {
-        public DBConnection Connection { get; set; }
-        public string DBCommand { get; set; }
+        private DBConnection Connection { get; set; }
+        private string DBCommand { get; set; }
 
         public DbCommand(DBConnection connection, string dbCommand)
         {
